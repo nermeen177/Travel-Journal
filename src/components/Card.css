@@ -1,0 +1,50 @@
+.card
+{
+    width: 75%;
+    height: 300px;
+    margin-bottom: 100px;
+    position: relative; 
+    left: 50%; 
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-rows: 300px;
+    grid-template-columns:  220px 70%;
+    grid-column-gap: 2%;
+    color: white;
+}
+.image
+{
+    border-radius: 10px;
+    width: 220px; 
+    height: 300px;
+    box-shadow: 1px 1px 5px #888888;  
+} 
+.content
+{
+   position: relative;
+   padding: 20px;
+}
+.icon
+{
+    color: #2cb493;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+.card{
+    grid-template-rows: 220px;
+    grid-template-columns:  170px 70%;
+    grid-column-gap: 1%;
+    margin-bottom: 50px;
+}
+.image
+{
+    width: 170px; 
+    height: 220px;
+}
+.content
+{
+    font-size: 10px;
+}
+}
